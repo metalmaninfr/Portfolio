@@ -26,7 +26,7 @@ body {
 }
 /* ------- MAINEPAGE / NAVIGATION  -------*/
 .front {
-  background: #fff;
+  background: #F8F8F8;
   transform: rotateY( 0deg) translateZ( 50vw);
 }
 /* ------ PAGE PROJETS ----- */
@@ -36,7 +36,7 @@ body {
 }
 /* ------ PAGE project ----- */
 .right {
-  background-color: #0B3667;
+  background-color: #011627;
   transform: rotateY( 90deg) translateZ( 50vw);
 }
 
@@ -51,7 +51,7 @@ body {
 }
 /*-------- PAGE A PROPOS --------- */
 .left {
-  background-color: #011627;
+  background-color: #10222F;
   transform: rotateY( -90deg) translateZ(50vw);
 }
 /* utile mais pas tres visible */
@@ -227,7 +227,7 @@ body {
   color: #fff;
 }
 .cube-2-project-container, .cube-3-project-container {
-  border-top: 2px solid #000;
+  border-top: 2px solid #fff;
 }
 
 .cube-1-project-natours, .cube-1-project-activeBox, .cube-1-project-pacman {
