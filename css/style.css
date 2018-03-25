@@ -12,12 +12,14 @@ body {
   /* display: flex; */
 }
 .cube1-container {
-  perspective: 2000rem;
+  -webkit-perspective: 2000rem;
+          perspective: 2000rem;
 }
 .cube1, .cube2, .cube3 {
   height: 33.3vh;
   width: 100vw;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 .cube1-face, .cube2face, .cube3-face {
   position: absolute;
@@ -27,51 +29,76 @@ body {
 /* ------- MAINEPAGE / NAVIGATION  -------*/
 .front {
   background: #F8F8F8;
-  transform: rotateY( 0deg) translateZ( 50vw);
+  -webkit-transform: rotateY( 0deg) translateZ( 50vw);
+          transform: rotateY( 0deg) translateZ( 50vw);
 }
 /* ------ PAGE PROJETS ----- */
 .back {
   background: #1F2421;
-  transform: rotateX( 180deg) translateZ( 50vw);
+  -webkit-transform: rotateX( 180deg) translateZ( 50vw);
+          transform: rotateX( 180deg) translateZ( 50vw);
 }
 /* ------ PAGE project ----- */
 .right {
   background-color: #011627;
-  transform: rotateY( 90deg) translateZ( 50vw);
+  -webkit-transform: rotateY( 90deg) translateZ( 50vw);
+          transform: rotateY( 90deg) translateZ( 50vw);
 }
 
 .rotate-to-right {
-  animation: rotate-to-right 2s both;
+  -webkit-animation: rotate-to-right 2s both;
+          animation: rotate-to-right 2s both;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .rotate-right-to-front {
-  animation: rotate-right-to-front 2s both;
+  -webkit-animation: rotate-right-to-front 2s both;
+          animation: rotate-right-to-front 2s both;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 /*-------- PAGE A PROPOS --------- */
 .left {
   background-color: #10222F;
-  transform: rotateY( -90deg) translateZ(50vw);
+  -webkit-transform: rotateY( -90deg) translateZ(50vw);
+          transform: rotateY( -90deg) translateZ(50vw);
 }
 /* utile mais pas tres visible */
 
 .rotate-to-left {
-  animation: rotate-to-left 2s both;
+  -webkit-animation: rotate-to-left 2s both;
+          animation: rotate-to-left 2s both;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .rotate-left-to-front {
-  animation: rotate-left-to-front 2s both;
+  -webkit-animation: rotate-left-to-front 2s both;
+          animation: rotate-left-to-front 2s both;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 /* ------------- CUBE MAINPAGE --------------- */
 
 .cube1-face-title, .cube2-face-title, .cube3-face-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 2rem;
   height: 100%;
   width: 100%;
@@ -81,9 +108,16 @@ body {
 }
 
 .hand-pointer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   bottom: 5%;
 }
@@ -99,15 +133,21 @@ body {
 /* ------------- CUBE LEFT A PROPOS --------------- */
 
 .menu-btn, .menu-btn-right, .menu-btn-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 5vh;
   padding-top: 3vh;
   cursor: pointer;
 }
 
 .menu-btn-right {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: #fff;
   padding-left: 3vw;
 }
@@ -152,9 +192,16 @@ body {
 }
 
 .cube-3-about-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 1.8vh;
 }
 
@@ -171,12 +218,18 @@ body {
 /* ------------- CUBE BACK CONTACT --------------- */
 
 .rotate-to-back {
-  animation: rotate-to-back 2s both;
+  -webkit-animation: rotate-to-back 2s both;
+          animation: rotate-to-back 2s both;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .rotate-back-to-front {
-  animation: rotate-back-to-front 2s both;
+  -webkit-animation: rotate-back-to-front 2s both;
+          animation: rotate-back-to-front 2s both;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
@@ -189,10 +242,19 @@ body {
 }
 
 .contact-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2.3vh;
 }
 
@@ -231,8 +293,12 @@ body {
 }
 
 .cube-1-project-natours, .cube-1-project-activeBox, .cube-1-project-pacman {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cube-1-project-activeBox, .cube-1-project-pacman {
@@ -251,7 +317,9 @@ body {
 .cube-1-project-text, .cube-1-project-text, .cube-1-project-text {
   position: absolute;
   bottom: 1.5vh;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 2vh;
   color: #fff;
 }
@@ -259,109 +327,256 @@ body {
 
 /* KEYFRAMES GOING TO ABOUT PAGE */
 
-@keyframes rotate-to-left {
+@-webkit-keyframes rotate-to-left {
   0% {
-    transform: scale(1) rotateY(0deg);
+    -webkit-transform: scale(1) rotateY(0deg);
+            transform: scale(1) rotateY(0deg);
   }
   25%{
-    transform: scale(0.6) rotateY(0deg);
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
   }
   50% {
-    transform: scale(0.6) rotateY(90deg) ;
+    -webkit-transform: scale(0.6) rotateY(90deg) ;
+            transform: scale(0.6) rotateY(90deg) ;
   }
   100% {
-     transform: scale(1) rotateY(90deg);
+     -webkit-transform: scale(1) rotateY(90deg);
+             transform: scale(1) rotateY(90deg);
+  }
+}
+
+@keyframes rotate-to-left {
+  0% {
+    -webkit-transform: scale(1) rotateY(0deg);
+            transform: scale(1) rotateY(0deg);
+  }
+  25%{
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.6) rotateY(90deg) ;
+            transform: scale(0.6) rotateY(90deg) ;
+  }
+  100% {
+     -webkit-transform: scale(1) rotateY(90deg);
+             transform: scale(1) rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes rotate-left-to-front {
+  0% {
+    -webkit-transform: scale(1) rotateY(90deg);
+            transform: scale(1) rotateY(90deg);
+  }
+  25%{
+    -webkit-transform: scale(0.6) rotateY(90deg);
+            transform: scale(0.6) rotateY(90deg);
+  }
+  50% {
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
+  }
+  100% {
+     -webkit-transform: scale(1) rotateY(0deg);
+             transform: scale(1) rotateY(0deg);
   }
 }
 
 @keyframes rotate-left-to-front {
   0% {
-    transform: scale(1) rotateY(90deg);
+    -webkit-transform: scale(1) rotateY(90deg);
+            transform: scale(1) rotateY(90deg);
   }
   25%{
-    transform: scale(0.6) rotateY(90deg);
+    -webkit-transform: scale(0.6) rotateY(90deg);
+            transform: scale(0.6) rotateY(90deg);
   }
   50% {
-    transform: scale(0.6) rotateY(0deg);
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
   }
   100% {
-     transform: scale(1) rotateY(0deg);
+     -webkit-transform: scale(1) rotateY(0deg);
+             transform: scale(1) rotateY(0deg);
   }
 }
 
 
 /* KEYFRAMES GOING TO project PAGE */
 
-@keyframes rotate-to-right {
+@-webkit-keyframes rotate-to-right {
   0% {
-    transform: scale(1) rotateY(0deg);
+    -webkit-transform: scale(1) rotateY(0deg);
+            transform: scale(1) rotateY(0deg);
   }
   25%{
-    transform: scale(0.6) rotateY(0deg);
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
   }
   50% {
-    transform: scale(0.6) rotateY(-90deg) ;
+    -webkit-transform: scale(0.6) rotateY(-90deg) ;
+            transform: scale(0.6) rotateY(-90deg) ;
   }
   100% {
-     transform: scale(1) rotateY(-90deg);
+     -webkit-transform: scale(1) rotateY(-90deg);
+             transform: scale(1) rotateY(-90deg);
+  }
+}
+
+@keyframes rotate-to-right {
+  0% {
+    -webkit-transform: scale(1) rotateY(0deg);
+            transform: scale(1) rotateY(0deg);
+  }
+  25%{
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.6) rotateY(-90deg) ;
+            transform: scale(0.6) rotateY(-90deg) ;
+  }
+  100% {
+     -webkit-transform: scale(1) rotateY(-90deg);
+             transform: scale(1) rotateY(-90deg);
+  }
+}
+
+@-webkit-keyframes rotate-right-to-front {
+  0% {
+    -webkit-transform: scale(1) rotateY(-90deg);
+            transform: scale(1) rotateY(-90deg);
+  }
+  25%{
+    -webkit-transform: scale(0.6) rotateY(-90deg);
+            transform: scale(0.6) rotateY(-90deg);
+  }
+  50% {
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
+  }
+  100% {
+     -webkit-transform: scale(1) rotateY(0deg);
+             transform: scale(1) rotateY(0deg);
   }
 }
 
 @keyframes rotate-right-to-front {
   0% {
-    transform: scale(1) rotateY(-90deg);
+    -webkit-transform: scale(1) rotateY(-90deg);
+            transform: scale(1) rotateY(-90deg);
   }
   25%{
-    transform: scale(0.6) rotateY(-90deg);
+    -webkit-transform: scale(0.6) rotateY(-90deg);
+            transform: scale(0.6) rotateY(-90deg);
   }
   50% {
-    transform: scale(0.6) rotateY(0deg);
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
   }
   100% {
-     transform: scale(1) rotateY(0deg);
+     -webkit-transform: scale(1) rotateY(0deg);
+             transform: scale(1) rotateY(0deg);
   }
 }
 
 /* KEYFRAMES GOING TO Contact PAGE */
 
-@keyframes rotate-to-back {
+@-webkit-keyframes rotate-to-back {
   0% {
-    transform: scale(1) rotateY(0deg);
+    -webkit-transform: scale(1) rotateY(0deg);
+            transform: scale(1) rotateY(0deg);
   }
   25%{
-    transform: scale(0.6) rotateY(0deg);
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
   }
   50% {
-    transform: scale(0.6) rotateY(180deg);
+    -webkit-transform: scale(0.6) rotateY(180deg);
+            transform: scale(0.6) rotateY(180deg);
   }
   75% {
-    transform: scale(1) rotateY(180deg);
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
   }
   100% {
-    transform: scale(1) rotateX(180deg);
+    -webkit-transform: scale(1) rotateX(180deg);
+            transform: scale(1) rotateX(180deg);
+  }
+}
+
+@keyframes rotate-to-back {
+  0% {
+    -webkit-transform: scale(1) rotateY(0deg);
+            transform: scale(1) rotateY(0deg);
+  }
+  25%{
+    -webkit-transform: scale(0.6) rotateY(0deg);
+            transform: scale(0.6) rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.6) rotateY(180deg);
+            transform: scale(0.6) rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(180deg);
+            transform: scale(1) rotateX(180deg);
+  }
+}
+
+@-webkit-keyframes rotate-back-to-front {
+  0% {
+    -webkit-transform: scale(1) rotateX(180deg);
+            transform: scale(1) rotateX(180deg);
+  }
+  25%{
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: scale(0.6) rotateY(180deg);
+            transform: scale(0.6) rotateY(180deg);
+  }
+  75% {
+     -webkit-transform: scale(0.6) rotateY(0deg);
+             transform: scale(0.6) rotateY(0deg);
+  }
+  100%{
+    -webkit-transform: scale(1) rotateX(0deg);
+            transform: scale(1) rotateX(0deg);
   }
 }
 
 @keyframes rotate-back-to-front {
   0% {
-    transform: scale(1) rotateX(180deg);
+    -webkit-transform: scale(1) rotateX(180deg);
+            transform: scale(1) rotateX(180deg);
   }
   25%{
-    transform: scale(1) rotateY(180deg);
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
   }
   50% {
-    transform: scale(0.6) rotateY(180deg);
+    -webkit-transform: scale(0.6) rotateY(180deg);
+            transform: scale(0.6) rotateY(180deg);
   }
   75% {
-     transform: scale(0.6) rotateY(0deg);
+     -webkit-transform: scale(0.6) rotateY(0deg);
+             transform: scale(0.6) rotateY(0deg);
   }
   100%{
-    transform: scale(1) rotateX(0deg);
+    -webkit-transform: scale(1) rotateX(0deg);
+            transform: scale(1) rotateX(0deg);
   }
 }
 
 @media (min-width: 767px) {
-  /* ------------- CUBE LEFT A PROPOS --------------- */
   .main-title {
     font-size: 4vh;
   }
