@@ -92,7 +92,7 @@ body {
   text-align: center;
 }
 
-.desktop-clickHere {
+.desktop {
   display: none;
 }
 
@@ -375,6 +375,14 @@ body {
   }
 }
 @media (min-width: 1023px) {
-
-
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .contact-icons {
+    font-size: 12vh;
+    margin-top: 3vh;
+  }
 }
